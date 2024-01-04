@@ -14,6 +14,14 @@ func Setup(app *fiber.App) {
 		AllowHeaders:     "Origin, Content-Type, Accept",
 		AllowCredentials: true,
 	}))
+
+	//AlejoParrilla APIs
+	app.Get("/api/allmenu", controller.AllMenu)
+	app.Get("/api/filtermenu", controller.FilterMenu)
+	app.Post("/api/createbooking", controller.CreateBooking)
+	app.Post("/api/collectemail", controller.CollectEmail)
+
+	//Cooler APIs
 	app.Post("/api/register", controller.Register)
 	app.Post("/api/login", controller.Login)
 
