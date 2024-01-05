@@ -9,11 +9,11 @@ import (
 
 func Setup(app *fiber.App) {
 	app.Use(cors.New(cors.Config{
-		AllowOrigins:     "http://localhost:5173, https://fictional-space-memory-9qrr64w7v67cgxg-5173.app.github.dev/",
-		AllowMethods:     "GET,POST,PUT,DELETE,OPTIONS",
-		AllowHeaders:     "Origin, Content-Type, Accept",
-		AllowCredentials: true,
-	}))
+        AllowOrigins:     "http://localhost:5173, https://fictional-space-memory-9qrr64w7v67cgxg-5173.app.github.dev, https://alejoparrilla-backend-temp-c472e01a4c9d.herokuapp.com",
+        AllowMethods:     "GET,POST,PUT,DELETE,OPTIONS",
+        AllowHeaders:     "Origin, Content-Type, Accept",
+        AllowCredentials: true,
+    }))
 
 	//AlejoParrilla APIs
 	app.Get("/api/allmenu", controller.AllMenu)
