@@ -13,7 +13,6 @@ func Setup(app *fiber.App) {
 		AllowMethods:     "GET,POST,PUT,DELETE,OPTIONS",
 		AllowHeaders:     "Origin, Content-Type, Accept",
 		AllowCredentials: true,
-		Access-Control-Allow-Credentials: true,
 	}))
 
 	//AlejoParrilla APIs
