@@ -12,7 +12,6 @@ func Setup(app *fiber.App) {
 		AllowOrigins:     "http://localhost:5173, https://fictional-space-memory-9qrr64w7v67cgxg-5173.app.github.dev",
 		AllowMethods:     "GET,POST,PUT,DELETE,OPTIONS",
 		AllowHeaders:     "Origin, Content-Type, Accept",
-		AllowCredentials: true,
 	}))
 
 	//AlejoParrilla APIs
